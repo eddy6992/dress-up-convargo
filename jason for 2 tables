@@ -1,0 +1,22 @@
+jason for 2 tables
+
+[{
+		"Commande": {
+			"id_client": "1",
+			"id_product": "2",
+			"lastname": "lucas",
+			"date": "2011-09-11",
+			"amount": "1"
+
+		}
+	}
+]
+
+[{
+		"Stock": {
+			"id_product": "2",
+			"zip_code": "90049",
+			"stock": "123"
+				}
+	}
+]
