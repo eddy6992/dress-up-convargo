@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    
 
     <title>CSS/HTML Workshop with Convargo</title>
   <meta charset="utf-8">
@@ -198,10 +198,8 @@
   }
   </style>
   </head>
-  <body>
-    <h1> CONVARGO </h1>
-    
-    <nav class="navbar navbar-default navbar-fixed-top">
+  <body>  
+   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -209,13 +207,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">convargo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-     
-        <li><a href="#about">ABOUT</a></li> <li><a href="#services">SERVICES</a></li>
-             
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="#contact">CONTACT</a></li>
+      </ul> <li><a href="#services">SERVICES</a></li>
     </div>
   </div>
 </nav>
@@ -227,6 +225,12 @@
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
         <button type="button" class="btn btn-danger">Subscribe</button>
+        <input id = "button" type = "submit" name="Subscribe" onclick="myFunction()"; value = "Subscribe">
+        <script> 
+          function myFunction(){
+            alert("email enregistrer");
+          };
+        </script>
       </div>
     </div>
   </form>
@@ -238,8 +242,8 @@
   <div class="row">
     <div class="col-sm-8">
       <h2>About Company Page</h2><br>
-      <h4>text</h4><br>
-      <p>text</p>
+      <h4>Send your goods in safety</h4><br>
+      <p>The platform allows the professionals to send their goods in all Europe in a few clicks. Inform your needs for expedition, obtain a fixed price and reach more than 2 500 quality carriers.</p>
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
     <div class="col-sm-4">
@@ -255,19 +259,31 @@
     </div>
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission <!--ecrire mission-->.</h4><br>
-      <p><strong>VISION:</strong> Our vision .</p>
-    </div>
-  </div>
-</div>
+      <h4><strong>MISSION:</strong> 
+        Publish your offer in 1 minute<br><br>
+        <br>
 
-    <!--<div class="container" style="background: blue">
-      <h3>Finish Container</h3>
-    </div>
-    <div class="container-fluid" style="background: red">
-      <h3>Finish Container</h3>
-    </div>-->
-    <div id="trucker">
+Inform your needs for transport in a few seconds. Our algorithm calculates then the price(prize) the most just for your expedition(shipping), you do not have more than to publish your offer.
+
+2 Reach 2 500 carriers <br>
+<br>
+
+Once published, your offer is visible by all the professional carriers of the platform. The latter can thus accept it and so reach all the necessary information of transport.<br>
+
+3 Follow your goods<br>
+
+Once the running was started by the carrier, you can follow the routing of your goods stage by stage, of the departure of the driver until the delivery.<!--ecrire mission--></h4><br>
+      <p><strong>CALCULE:</strong> Our vision
+      The Goods freight transport sector is a key sector of the Europe (even worldwilde) economy:
+
+300 billion euros in Europe
+43 billion euros in France
+highly fragmented with more than 40,000 road transport companies in France
+under efficient: ⅓ trucks drive empty on Fance roads! .</p><br>
+
+<p><strong>the transport price calculated according to the best opportunities on the market<p></strong>
+      <p> 
+          <div id="trucker">
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
@@ -283,9 +299,100 @@
     <script src="convargo.js"></script>
     <script src="index.js"></script>
 
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1519218732/p>
+      <p><span class="glyphicon glyphicon-envelope"></span> emylajoie@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input id = "button" type = "submit" name="Send" onclick="myFunction()"; value = "Send">
+        <script> 
+          function myFunction(){
+            alert("Contact send");
+          };
+        </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--<div class="container" style="background: blue">
+      <h3>Finish Container</h3>
+    </div>
+    <div class="container-fluid" style="background: red">
+      <h3>Finish Container</h3>
+    </div>-->
+    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+ $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
   </body>
 </html>
 
